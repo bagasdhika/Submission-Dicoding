@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dicoding Story App</title>
+
+    <!-- ================= FAVICON ================= -->
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+
+    <!-- ================= LEAFLET CSS (FIX: TANPA INTEGRITY) ================= -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= SKIP TO CONTENT (ADVANCED – A11Y) ================= -->
+    <a href="#main-content" class="skip-link">Lewati ke Konten</a>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+      <div class="main-header container">
+        <a class="brand-name" href="#/">Dicoding Story</a>
+
+        <nav
+          id="navigation-drawer"
+          class="navigation-drawer"
+          aria-label="Navigasi utama"
+        >
+          <ul class="nav-list" id="navList"></ul>
+        </nav>
+
+        <button
+          id="drawer-button"
+          class="drawer-button"
+          aria-label="Buka menu navigasi"
+          aria-controls="navigation-drawer"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT (SPA TARGET) ================= -->
+    <main
+      id="main-content"
+      class="main-content"
+      tabindex="-1"
+      role="main"
+    ></main>
+
+    <!-- ================= LEAFLET JS (FIX: TANPA INTEGRITY) ================= -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    
+  </body>
+</html>

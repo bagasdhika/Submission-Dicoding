@@ -1,0 +1,158 @@
+Nama              : Dhika Bagas
+Email             : (email akun Dicoding Anda)
+Kelas             : Belajar Pengembangan Web Intermediate
+Submission        : Submission 2 – Advanced
+Aplikasi          : Dicoding Story App
+
+============================================================
+URL DEPLOYMENT (WAJIB)
+============================================================
+https://<URL-DEPLOYMENT-ANDA>
+
+Catatan:
+Aplikasi telah di-deploy secara publik dan dapat diakses
+menggunakan browser desktop maupun mobile.
+
+============================================================
+KETERANGAN UMUM APLIKASI
+============================================================
+Aplikasi Dicoding Story App merupakan Single Page Application (SPA)
+yang memungkinkan pengguna untuk:
+- Login dan registrasi akun
+- Menampilkan daftar story dari API Dicoding
+- Menampilkan marker lokasi story pada peta (Leaflet)
+- Menambahkan story baru dengan foto, kamera, dan lokasi
+- Mengaktifkan Push Notification
+- Menggunakan aplikasi dalam mode offline (PWA)
+- Menyimpan dan sinkronisasi data offline (IndexedDB)
+
+============================================================
+KRITERIA 1 – MEMPERTAHANKAN SUBMISSION 1 (WAJIB)
+============================================================
+✓ Menerapkan Single Page Application (SPA)
+  - Navigasi berbasis hash (#/)
+  - Tanpa reload halaman penuh
+
+✓ Transisi halaman
+  - Menggunakan View Transition API (fallback aman)
+
+✓ Menampilkan data story dari API Dicoding
+  - Endpoint: /stories
+  - Data ditampilkan dalam bentuk card
+
+✓ Menampilkan marker pada peta
+  - Menggunakan Leaflet.js
+  - Marker sinkron dengan daftar story
+
+✓ Fitur tambah story
+  - Form tambah story
+  - Upload foto (file atau kamera)
+  - Pemilihan lokasi menggunakan peta
+
+✓ Aksesibilitas
+  - Skip to content
+  - aria-label, aria-live, role
+  - Navigasi keyboard (Enter)
+  - Alt text pada gambar
+
+Status: ✅ TERPENUHI
+
+============================================================
+KRITERIA 2 – PUSH NOTIFICATION (ADVANCED)
+============================================================
+✓ Push Notification diterapkan menggunakan Service Worker
+
+✓ Trigger notifikasi berasal dari API
+  - Notifikasi muncul saat story baru ditambahkan
+
+✓ Notifikasi bersifat dinamis
+  - Judul, deskripsi, icon, dan data URL disesuaikan
+  - Data diambil dari payload push event
+
+✓ Toggle Push Notification (Advanced)
+  - Pengguna dapat mengaktifkan / menonaktifkan push notification
+  - Status subscription dicek otomatis
+  - Unsubscribe dilakukan dengan benar
+
+✓ Action Button pada Notifikasi
+  - Tombol "Lihat Story"
+  - Klik notifikasi akan membuka halaman aplikasi
+
+Catatan:
+- Push notification tidak mengganggu proses login
+- Permission hanya diminta melalui interaksi user
+
+Status: ✅ ADVANCED
+
+============================================================
+KRITERIA 3 – PWA (ADVANCED)
+============================================================
+✓ Web App Manifest tersedia
+  - name, short_name
+  - icons
+  - theme_color & background_color
+  - display: standalone
+  - start_url
+
+✓ Aplikasi dapat di-install (Installable)
+  - Terdeteksi oleh Chrome DevTools
+  - Dapat di-add ke homescreen
+
+✓ Mode Offline
+  - App shell tetap tampil saat offline
+  - Data API di-cache menggunakan strategi Network First
+
+✓ Advanced Caching Strategy
+  - Static asset → Cache First
+  - API /stories → Network First + Cache fallback
+
+✓ Tidak ada warning pada Manifest (Chrome DevTools)
+
+Status: ✅ ADVANCED
+
+============================================================
+KRITERIA 4 – INDEXEDDB (ADVANCED)
+============================================================
+✓ Menggunakan IndexedDB (library idb)
+
+✓ Fitur yang memanfaatkan IndexedDB:
+  - Menyimpan data story saat offline
+  - Membaca data story dari IndexedDB
+  - Menghapus data story lokal
+
+✓ Interaktivitas data
+  - Sinkronisasi offline → online
+  - Data yang dibuat saat offline akan dikirim ke API
+    saat koneksi kembali online
+
+✓ UX aman
+  - Tidak mengganggu fitur utama
+  - Notifikasi status melalui toast
+
+Status: ✅ ADVANCED
+
+============================================================
+KRITERIA 5 – DISTRIBUSI PUBLIK (WAJIB)
+============================================================
+✓ Aplikasi di-deploy secara publik
+✓ URL deployment dicantumkan di atas
+✓ Aplikasi dapat diakses tanpa error
+
+Platform Deployment:
+- (GitHub Pages / Netlify / Firebase Hosting)
+
+Status: ✅ TERPENUHI
+
+============================================================
+CATATAN TAMBAHAN UNTUK REVIEWER
+============================================================
+- Seluruh fitur Submission 1 dipertahankan tanpa regresi
+- Penambahan fitur dilakukan secara non-breaking
+- Kode telah disesuaikan untuk mode development & production
+- Service Worker aman untuk SPA dan API
+- Push Notification hanya aktif jika didukung browser
+
+============================================================
+PENUTUP
+============================================================
+Terima kasih telah melakukan review terhadap submission ini.
