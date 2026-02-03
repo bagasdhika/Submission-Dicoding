@@ -7,7 +7,7 @@ Aplikasi          : Dicoding Story App
 ============================================================
 URL DEPLOYMENT (WAJIB)
 ============================================================
-https://<URL-DEPLOYMENT-ANDA>
+https://storydicoding.netlify.app/#/login
 
 Catatan:
 Aplikasi telah di-deploy secara publik dan dapat diakses
